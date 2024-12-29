@@ -10,6 +10,7 @@ import Navbar from './assets/components/navbar/Navbar';
 import SpecificProduct from './assets/components/product/SpecificProduct';
 import Footer from './assets/components/footer/Footer';
 import AddProduct from './assets/components/product/AddProduct';
+import Loader from './assets/components/loader/Loader';
 
 
 function App() {

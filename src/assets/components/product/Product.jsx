@@ -1,6 +1,8 @@
 import React from 'react'
 import useFetch from '../../customHook/useFetch';
 import { Link, useParams } from 'react-router-dom'; 
+import Loader from '../loader/Loader';
+
 
 
 export default function Product() {
@@ -8,10 +10,10 @@ export default function Product() {
         const { data, isLoading, errors } = useFetch('https://dummyjson.com/products');
         console.log(data);
 
-    // Handle loading state
-    if (isLoading) {
-        return <div>Loading Product Details...</div>;
-      }
+   // Handle loading state
+       if (isLoading) {
+           return <Loader />;
+         }
     
       // Handle error state
       if (errors) {

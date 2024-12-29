@@ -2,6 +2,7 @@ import React from 'react'
 import useFetch from '../../customHook/useFetch';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import Loader from '../loader/Loader';
 
 export default function CategoriesProducts() {
    const {category} = useParams();
@@ -10,7 +11,7 @@ export default function CategoriesProducts() {
 
     // Handle loading state
     if (isLoading) {
-        return <div>Loading categories...</div>;
+        return <Loader />;
       }
     
       // Handle error state

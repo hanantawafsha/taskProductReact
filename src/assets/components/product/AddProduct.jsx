@@ -9,6 +9,7 @@ export default function AddProduct() {
     image: "",
   });
 
+
   return (
     <div className="container mt-4 addProduct">
       <h1>Add Product</h1>

@@ -1,16 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import useFetch from '../../customHook/useFetch';
+import Loader from '../loader/Loader';
 
 export default function Categories() {
     // TODO: fetch data from API
     const {data, isLoading, errors} = useFetch('https://dummyjson.com/products/category-list');
+    //console.log(isLoading);
     //console.log(`data is ${data}`);
 
-    // Handle loading state
-  if (isLoading) {
-    return <div>Loading categories...</div>;
-  }
+ // Handle loading state
+     if (isLoading) {
+        return <Loader />;
+
+       }
 
   // Handle error state
   if (errors) {
