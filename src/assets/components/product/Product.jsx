@@ -6,7 +6,7 @@ import Loader from '../loader/Loader';
 
 
 export default function Product() {
-    const productId= useParams();
+    
         const { data, isLoading, errors } = useFetch('https://dummyjson.com/products');
         console.log(data);
 
