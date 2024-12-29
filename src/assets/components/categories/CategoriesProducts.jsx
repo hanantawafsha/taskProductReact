@@ -26,7 +26,7 @@ export default function CategoriesProducts() {
     //   console.log(`products are ${products}`);
   
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 categoriesProduct">
     {products.length > 0 ? (
       <div className="row">
         {products.map((product) => (

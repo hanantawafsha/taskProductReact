@@ -10,6 +10,14 @@
   padding-top: calc(1rem + 72px);
   padding-bottom: 1rem;
 }
+.categoriesProduct{
+  padding-top: calc(1rem + 72px);
+  padding-bottom: 1rem;
+}
+.products{
+  padding-top: calc(1rem + 72px);
+  padding-bottom: 1rem;
+}
 .footer {
   padding-top: 2rem;
   padding-bottom: 2rem;

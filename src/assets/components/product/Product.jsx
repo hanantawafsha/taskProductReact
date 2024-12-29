@@ -28,7 +28,7 @@ export default function Product() {
     
   return (
     // Render the product details here...
-    <div className="container mt-4 specificProduct">
+    <div className="container mt-4 products">
     <div className="row d-flex flex-wrap justify-content-center text-center ">
 
       {products.map((product) => (

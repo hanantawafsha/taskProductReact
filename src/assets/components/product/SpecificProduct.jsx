@@ -20,7 +20,7 @@ export default function SpecificProduct() {
 const productDetails= data
   return (
     // Render the product details here...
-    <div className="container mt-4 categories">
+    <div className="container mt-4 products">
     <div className="row d-flex flex-wrap justify-content-center text-center ">
 <div>
           <h2>{productDetails.title}</h2>
