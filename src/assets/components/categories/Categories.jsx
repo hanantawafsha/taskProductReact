@@ -11,8 +11,7 @@ export default function Categories() {
 
  // Handle loading state
      if (isLoading) {
-        return <Loader />;
-
+return <Loader/>;
        }
 
   // Handle error state
