@@ -1,7 +1,7 @@
 import React from 'react'
 import useFetch from '../../customHook/useFetch'
 import { useParams } from 'react-router-dom'
-import Loader from '../loader/Loader';
+import LoaderC from '../loader/LoaderC';
 
 
 export default function SpecificProduct() {
@@ -11,7 +11,7 @@ export default function SpecificProduct() {
 
 // Handle loading state
     if (isLoading) {
-        return <Loader />;
+        return <LoaderC />;
       }   
       
       if (errors) return <p>Error: {errors.message}</p>;

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import useFetch from '../../customHook/useFetch';
-import Loader from '../loader/Loader';
+import Loader from '../loader/LoaderC';
+import LoaderC from '../loader/LoaderC';
 
 export default function Categories() {
     // TODO: fetch data from API
@@ -11,7 +12,7 @@ export default function Categories() {
 
  // Handle loading state
      if (isLoading) {
-return <Loader/>;
+return <LoaderC/>;
        }
 
   // Handle error state

@@ -1,18 +1,18 @@
 import React from 'react'
 import useFetch from '../../customHook/useFetch';
 import { Link, useParams } from 'react-router-dom'; 
-import Loader from '../loader/Loader';
+import LoaderC from '../loader/LoaderC';
 
 
 
 export default function Product() {
-    
+
         const { data, isLoading, errors } = useFetch('https://dummyjson.com/products');
         console.log(data);
 
    // Handle loading state
        if (isLoading) {
-           return <Loader />;
+           return <LoaderC />;
          }
     
       // Handle error state
@@ -28,11 +28,11 @@ export default function Product() {
     
   return (
     // Render the product details here...
-    <div className="container mt-4 categories">
+    <div className="container mt-4 specificProduct">
     <div className="row d-flex flex-wrap justify-content-center text-center ">
 
       {products.map((product) => (
-        <div key={product.id}>
+        <div key={product.id} >
           <h2>{product.title}</h2>
           <p>{product.description}</p>
           <p>Category: {product.category}</p>
